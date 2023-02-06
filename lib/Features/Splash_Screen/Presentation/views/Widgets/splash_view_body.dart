@@ -1,6 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:bookly/Features/home_screen/Presentation/home_view/home_view.dart';
-import 'package:bookly/constants.dart';
+import 'package:bookly/cores/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
