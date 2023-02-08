@@ -16,7 +16,7 @@ class HomeViewBody extends StatelessWidget {
       body: SafeArea(
         child:
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 14),
+          padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 14),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
