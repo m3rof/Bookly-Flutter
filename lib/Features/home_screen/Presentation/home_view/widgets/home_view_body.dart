@@ -14,26 +14,41 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       body: SafeArea(
-        child:
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-             const CustomAppBar(),
-              SizedBox(
-                height: 25,
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                   Padding(
+                     padding: const EdgeInsets.symmetric(horizontal: 30),
+                     child:const CustomAppBar(),
+                   ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  ShowBooksHorizontal(),
+                  const SizedBox(
+                    height: 51,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    child: Text('Best Seller',style: Styles.TextStyle18,),
+                  ),
+                  SizedBox(height: 20,),
+                  //
+                ],
               ),
-              ShowBooksHorizontal(),
-              const SizedBox(
-                height: 51,
+            ),
+            SliverFillRemaining(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 0),
+                child: ItemsListView(),
               ),
-              Text('Best Seller',style: Styles.TextStyle18,),
-              SizedBox(height: 20,),
-              ItemsListView(),
-            ],
-          ),
-        ),
+            )
+          ],
+        )
+
       )
     );
   }
