@@ -51,7 +51,7 @@ class BuildItems extends StatelessWidget {
                     children: [
                       Text('19.99 €',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                       const Spacer(),
-                      Icon(FontAwesomeIcons.solidStar,color: Color(0xffFFDD4f),size: 16,),
+                     const Icon(FontAwesomeIcons.solidStar,color: Color(0xffFFDD4f),size: 16,),
                       const SizedBox(
                         width: 6.3,
                       ),
