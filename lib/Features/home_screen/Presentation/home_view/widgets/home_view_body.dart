@@ -1,8 +1,7 @@
-
 import 'package:bookly/Features/home_screen/Presentation/home_view/widgets/custom_appbar.dart';
 import 'package:bookly/Features/home_screen/Presentation/home_view/widgets/show_books_horizontal.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 import '../../../../../cores/Styles.dart';
 import 'Search_Text_Field.dart';
 import 'items_list_view.dart';
