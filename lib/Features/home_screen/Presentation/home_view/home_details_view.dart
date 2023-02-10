@@ -6,6 +6,6 @@ class HomeDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomeDetailsViewBody();
+    return const HomeDetailsViewBody();
   }
 }
